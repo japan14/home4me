@@ -1,0 +1,27 @@
+/* Style the container to position it in the center of the screen */
+.card-container {
+  position: fixed;           /* Fixes the container's position relative to the viewport */
+  top: 50%;                  /* Position it in the middle vertically */
+  left: 50%;                 /* Position it in the middle horizontally */
+  transform: translate(-50%, -50%); /* Offset the container by its own dimensions to center it exactly */
+  display: grid;             /* Use grid layout */
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 20px;                 /* Space between cards */
+  padding: 20px;             /* Optional padding around the grid */
+  z-index: 999;              /* Ensure it's on top of other content */
+}
+
+.bottom-left-card {
+  width: 250px;   /* Ensure the card takes the full width of its container */
+  height: 140px;
+  background-color: #f1f1f1;  /* Background color */
+  border-radius: 10px;         /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.MuiTypography-root {
+  font-size: 18px;      /* Ensures the font size is readable */
+  font-weight: bold;    /* Make headings stand out */
+  color: black;
+  overflow: visible;
+}

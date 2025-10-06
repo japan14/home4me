@@ -1,0 +1,98 @@
+/* Chatbot Container */
+.chatbot {
+  position: fixed;       /* Fixes the position relative to the viewport */
+  bottom: 20px;          /* Distance from the bottom of the screen */
+  right: 20px;           /* Distance from the right of the screen */
+  width: 400px;          /* Set the width of the chatbot */
+  height: 550px;         /* Set the height of the chatbot */
+  background-color: #f1f1f1; /* Background color for the chatbot */
+  border: 1px solid #ccc;    /* Optional border */
+  border-radius: 10px;       /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+  display: flex;         /* Enable flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  overflow: hidden;      /* Ensure no content overflows the container */
+}
+
+/* Header Section */
+.chatbot-header {
+  background-color: #3cb3e2; /* Header background color */
+  color: white;             /* Text color */
+  padding: 3px;             /* Padding inside the header */
+  text-align: center;       /* Center-align header text */
+  font-size: 1rem;          /* Header font size */
+  font-weight: bold;        /* Header font weight */
+  border-bottom: 1px solid #ccc; /* Optional border to separate from messages */
+}
+
+/* Messages Section */
+.chatbot-messages {
+  flex-grow: 1;             /* Allow this section to expand and fill available space */
+  padding: 10px;            /* Padding inside the messages area */
+  overflow-y: auto;         /* Add vertical scrolling if content overflows */
+  background-color: #ffffff; /* Background for the chat messages area */
+  display: flex;            /* Use flexbox for message alignment */
+  flex-direction: column;   /* Stack messages vertically */
+}
+
+/* Input Section */
+.chatbot-input-container {
+  display: flex;            /* Use flexbox to arrange input and button horizontally */
+  padding: 10px;            /* Padding inside the input container */
+  background-color: #f9f9f9; /* Background color for input container */
+  border-top: 1px solid #ccc; /* Optional border to separate from messages */
+}
+
+/* Input Field */
+.chatbot-input {
+  flex-grow: 1;             /* Allow input to take up remaining space */
+  padding: 10px;            /* Padding inside the input field */
+  border: 1px solid #ccc;   /* Border for the input field */
+  border-radius: 5px;       /* Rounded corners */
+  font-size: 1rem;          /* Font size */
+}
+
+/* Send Button */
+.chatbot-send-btn {
+  padding: 10px 20px;       /* Padding inside the button */
+  margin-left: 10px;        /* Spacing between input and button */
+  border: none;             /* Remove button border */
+  border-radius: 5px;       /* Rounded corners */
+  background-color: #3cb3e2; /* Button background color */
+  color: white;             /* Button text color */
+  font-size: 1rem;          /* Font size */
+  cursor: pointer;          /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.chatbot-send-btn:hover {
+  background-color: #3700b3; /* Darker shade on hover */
+}
+
+/* Message Bubble Common Style */
+.chatbot-message {
+  max-width: 80%;          /* Limit the width of the message bubbles */
+  padding: 10px;           /* Padding inside the bubble */
+  margin: 5px 0;           /* Space between bubbles */
+  border-radius: 15px;     /* Rounded corners for the bubble effect */
+  font-size: 0.9rem;       /* Adjust font size */
+  line-height: 1.5;        /* Improve readability */
+  word-wrap: break-word;   /* Prevent long words from overflowing */
+  display: inline-block;   /* Ensure the bubbles are inline but break to the next line */
+}
+
+/* Bot's Message */
+.chatbot-message.bot {
+  align-self: flex-start;  /* Align bot messages to the left */
+  background-color: #f1f1f1; /* Light gray background */
+  color: #000;            /* Black text color */
+  border: 1px solid #ccc;  /* Optional border */
+}
+
+/* User's Message */
+.chatbot-message.user {
+  align-self: flex-end;    /* Align user messages to the right */
+  background-color: #3cb3e2; /* Blue background for user messages */
+  color: white;            /* White text color */
+  border: none;            /* No border */
+}

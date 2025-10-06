@@ -1,0 +1,7 @@
+/* App.css */
+.App {
+  background: linear-gradient(to bottom, #FFFEFE, #a9adc1,#60aeee);
+
+  min-height: 100vh;
+  width: 100%;
+}

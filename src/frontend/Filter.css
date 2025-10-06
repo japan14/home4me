@@ -1,0 +1,64 @@
+/* Filter Section */
+.selection-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: -70px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* Filter Button */
+.filter-btn {
+  background-color: #3cb3e2;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 20;
+}
+
+.filter:hover .dropdown {
+  display: block;
+}
+
+/* Checkbox Label */
+.dropdown label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Search Button */
+.filter-search-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-search-btn:hover {
+  background-color: #218838;
+}

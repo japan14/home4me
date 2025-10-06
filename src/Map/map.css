@@ -1,0 +1,26 @@
+/* Styles for the Map container */
+.Map {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 120px;
+}
+
+/* Map container is aligned to the left */
+.Map-container {
+  width: 700px; /* Adjust width as needed */
+  height: 450px; /* Full screen height for better appearance */
+  margin: 20px;
+  padding-left: 10px;
+}
+
+/* Other content can go to the right of the map */
+.content {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+
+
